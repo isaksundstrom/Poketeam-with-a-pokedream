@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <img class = "titleCard" src = "files_and_shit\title_card.png"></img>
+  </head>
+  <body style="background-image: url('https://i.imgur.com/KzTsS4Q.png');">
+    <div id="app"></div>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCZ8m3pvtqFOnR5Jz-oHLP1-HzYPaSj5-I",
+    authDomain: "poketeam-with-a-pokedrea-d2e23.firebaseapp.com",
+    databaseURL: "https://poketeam-with-a-pokedrea-d2e23-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "poketeam-with-a-pokedrea-d2e23",
+    storageBucket: "poketeam-with-a-pokedrea-d2e23.appspot.com",
+    messagingSenderId: "706303879673",
+    appId: "1:706303879673:web:d3985cd58afd5ee7087528",
+    measurementId: "G-YCK5JT24C0"
+  };
+  // Initialize Firebase
+  
+    var app = firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    // export const auth = firebase.auth();
+
+    // export const db = firebase.database();
+const GoogleAuth = new firebase.auth.GoogleAuthProvider();
+
+   ;
+   </script>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.4/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.4/umd/react-dom.development.js"></script>
+    <script>
+    const h= React.createElement;
+    </script>
+
+    <script src="https://unpkg.com/babel-standalone/babel.js"></script>
+    <script src="js/apiConfig.js"></script>
+    <script src="js/pokeSource.js"></script>
+    <script src="js/PokeModel.js"></script>
+    <script src="reactjs/search.js"></script>  
+    <script src="reactjs/stats.js"></script>  
+    <script src="reactjs/team.js"></script>  
+    <script src="reactjs/auth.js"></script>  
+    <script src="reactjs/login.js"></script>  
+
+    <script src="js/readModel.js"></script>
+    <script src="js/show.js"></script>
+    <script src="reactjs/usePromise.js"></script>  
+    <script src="reactjs/useModelProp.js"></script>
+    <script src="js/views/promiseNoData.js" type="text/jsx" data-presets="es2016, react"></script>
+    <script src="js/views/loginView.js" type="text/jsx" data-presets="es2016, react"></script>
+    <script src="js/views/searchView.js" type="text/jsx" data-presets="es2016, react"></script>
+    <script src="js/views/statsView.js" type="text/jsx" data-presets="es2016, react"></script>
+    <script src="js/views/teamView.js" type="text/jsx" data-presets="es2016, react"></script>
+    <script src="js/app.js" type="text/jsx"></script>
+    <script type="text/jsx">
+        const model = readModel();
+        ReactDOM.render(<App model={model}/>, document.getElementById("app"));
+    </script>
+</html>

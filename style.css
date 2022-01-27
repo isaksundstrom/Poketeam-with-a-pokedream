@@ -1,0 +1,175 @@
+.debug {
+  border-style: solid;
+}
+@media (min-width: 250px) {
+  .flexParent {
+    display: flex;
+    height: 100%;
+  }
+}
+
+.mainContent {
+  flex: 1;
+}
+
+/*
+@media (… TODO … ){ 
+    .flexParent{ … }
+}
+*/
+
+.searchResult {
+  display: inline-block;
+  margin-top: 40px;
+  vertical-align: top;
+  text-align: center;
+  width: 200px;
+  border: 2px solid #3c5aa6;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+.searchResultImg {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.team {
+  background-color: bisque;
+  max-width: 500px;
+  border: 4px solid #000000;
+}
+
+.titleCard {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.divforinstructions {
+  width: 400px;
+
+  border: 4px solid #000000;
+}
+
+.pageselectdiv {
+  display: flex;
+
+  position: absolute;
+  border: 4px solid #3c5aa6;
+}
+
+.divformoves {
+  position: absolute;
+  height: 20px;
+  width: 220px;
+  border: 4px solid #000000;
+  background-color: bisque;
+  border-spacing: 1em;
+}
+
+.divforstats {
+  position: absolute;
+  line-height: 150%;
+  margin-left: 235px;
+  background-color: bisque;
+  width: 150px;
+  border: 4px solid #000000;
+  border-spacing: 1em;
+  align-items: flex-start;
+}
+
+.divforabilities {
+  position: absolute;
+  margin-left: 485px;
+
+  background-color: bisque;
+  width: 235px;
+  border: 4px solid #000000;
+  border-spacing: 1em;
+  align-items: flex-start;
+}
+
+.divfortypes {
+  position: absolute;
+  margin-left: 235px;
+  margin-top: 450px;
+  background-color: bisque;
+  width: 235px;
+  border: 4px solid #000000;
+  border-spacing: 1em;
+  align-items: flex-start;
+}
+.divforteamview {
+  display: flex;
+  flex-direction: column;
+
+  width: 200px;
+  height: 36px;
+  border: 2px solid #3c5aa6;
+  padding: 50px;
+  margin-left: 220px;
+  margin-top: -140px;
+}
+
+.divformove {
+  display: grid;
+  white-space: nowrap;
+  margin-top: -93px;
+  margin-left: 110px;
+}
+.divforteamview2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  width: 60px;
+  height: 36px;
+  border: 2px solid #3c5aa6;
+  padding: 50px;
+  margin-left: 540px;
+  margin-top: -142px;
+}
+
+.divforteamview3 {
+  display: flex;
+  justify-content: center;
+
+  width: 400px;
+  height: 36px;
+  border: 2px solid #3c5aa6;
+  padding: 50px;
+  margin-left: 730px;
+  margin-top: -144px;
+}
+
+.divforteamview4 {
+  display: flex;
+  justify-content: center;
+
+  width: 10px;
+  height: 10px;
+  border: 2px solid #3c5aa6;
+  padding: 50px;
+  margin-left: 1255px;
+  margin-top: -126px;
+}
+
+.loadingGif {
+  display: block;
+  height: 30%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+.backgroundView {
+  background-image: url("https://i.imgur.com/KzTsS4Q.png");
+  background-position: center; /* Center the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
